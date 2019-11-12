@@ -1,0 +1,470 @@
+@import url("fonts.css");
+@import url("flex.css");
+@import url("normalize.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    /*    box-sizing: border-box;*/
+}
+
+html,
+body {
+    background-color: #fff;
+    font-family: 'MyriadPro-Regular';
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.bg-header {
+    background: url(../img/header__bg2.png) no-repeat center;
+    -moz-background-size: 100% 100%;
+    /* Firefox 3.6+ */
+    -webkit-background-size: 100% 100%;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100% 100%;
+    /* Opera 9.6+ */
+    background-size: 100% 100%;
+    /* Современные браузеры */
+}
+
+
+.headerLogo {
+    color: #b4b8ba;
+}
+
+nav {
+    padding-top: 8px;
+}
+
+.boxTopnav a {
+    color: #ffffff;
+    font-size: 1.4em;
+    text-decoration: none;
+    padding: 25px 15px 10px;
+}
+
+.boxTopnav a:hover {
+    border-bottom: 3px solid #fcac45;
+}
+
+.btn {
+    display: none;
+}
+
+.containerHeader2 {
+    width: 70%;
+    justify-content: space-between;
+    margin: 5% auto;
+}
+.containerHeader2 .text p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 44.63px;
+    font-weight: 400;
+    text-align: left;
+}
+.containerHeader2 .text p::first-line {
+    font-size: 64.63px;
+}
+.containerHeader2 .text button.tryDemo {
+    width: 138px;
+    height: 38px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #111212;
+    background-color: #105b38;
+    margin-top: 5%;
+    color: #ffffff;
+    font-size: 22.63px;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.containerHeader2 .text button.tryDemo:hover {
+    color: yellow;
+}
+
+.containerHeader3 {
+    justify-content: center;
+    align-items: center;
+    color: orange;
+    font-size: 4em;
+    min-height: 480px;
+    text-align: center;
+}
+
+.icon4 {
+    margin-top: 5%;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 22.63px;
+
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.icon4 .icon-item > a {
+    color: #5c5b5b;
+    text-decoration: none;
+    display: block;
+}
+
+.icon4 .icon-item p::first-line {
+    font-size: 26.63px;
+}
+
+.icon4 .icon-item:hover {
+    opacity: 0.7;
+}
+
+
+
+
+.content {
+    width: 80%;
+    margin: auto;
+    padding: 3%;
+}
+
+.content h3 {
+    color: #4f4f4f;
+    font-size: 38.63px;
+    font-weight: 400;
+    text-align: left;
+    width: 100%;
+}
+
+.content p {
+    color: #818181;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: left;
+
+}
+
+.list {
+    margin-left: 30px;
+}
+
+.list h3 {
+    color: #4f4f4f;
+    font-size: 32.63px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.list ul {
+    color: #8a8888;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 38px;
+    list-style-image: url(../img/Shape%2015.png);
+    text-align: left;
+}
+
+.login,
+.subs {
+    border-radius: 5px;
+    width: 470px;
+    height: 109px;
+    padding: .5%;
+}
+
+.login {
+    background-color: #e7771f;
+}
+
+.login .input-2 {}
+
+.subs {
+    background-color: #00d5f3;
+}
+
+.form,
+.content2 {
+    margin-bottom: 2%;
+}
+
+.login p,
+.subs p {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    margin: 2%;
+}
+
+input {
+    margin: .4em 0 .4em .4em;
+    padding-left: 1em;
+}
+
+input[type='text'] {
+    background-color: #e8e8e8;
+    width: 155px;
+    height: 26px;
+    color: #4f4f4f;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 38px;
+    text-align: left;
+}
+
+input[type='password'] {
+    background-color: #e8e8e8;
+    width: 150px;
+    height: 26px;
+    color: #4f4f4f;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 38px;
+    text-align: left;
+}
+
+input[type='email'] {
+    background-color: #e8e8e8;
+    width: 265px;
+    height: 26px;
+    color: #4f4f4f;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 38px;
+    text-align: left;
+}
+
+input.sub {
+    background-color: #029bb1;
+    padding: 0 1.5em;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.9em;
+    text-align: center;
+}
+
+input.log {
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.9em;
+    text-align: center;
+    background-color: #444444;
+    padding: 0 .7em;
+}
+
+
+.about1 li,
+.about2 li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.about1 a,
+.about2 a {
+    text-decoration: none;
+    color: #939595;
+}
+
+.about1 a:hover,
+.about2 a:hover {
+    color: yellow;
+}
+
+.footer h3 {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: left;
+}
+
+.footer span {
+    color: #b8b7b7;
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.logo-footer {
+    padding-left: 4%;
+}
+
+.copyright a {
+    font-family: Arial;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: lef;
+    text-decoration: none;
+}
+
+
+footer {
+    background: #282129;
+
+    width: 100%;
+}
+
+.footer {
+    margin: 0 auto;
+    width: 90%;
+    color: #939595;
+    padding: 2%;
+    padding-left: 7%;
+
+}
+
+
+
+
+@media (max-width: 960px) {
+    .subs {
+        margin-top: 1%;
+    }
+}
+
+@media (max-width: 768px) {
+    .boxTopnav a {
+        display: none;
+    }
+
+    .boxTopnav a.btn {
+        display: block;
+        float: right;
+        font-size: 25px;
+        top: 17px;
+        right: 5px;
+    }
+
+    .boxTopnav a {
+        font-size: 1.1em;
+        padding: 5px 5px;
+    }
+
+    .boxTopnav a:hover {
+        border-bottom: none;
+        color: #fcac45;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .boxTopnav.responsive {
+       position: fixed;
+        top: 125px;
+        left: 0px;
+        z-index: 999;
+    }
+
+    .boxTopnav.responsive a.btn {
+        position: fixed;
+        top: 56px;
+        right: 0;
+    }
+
+    .boxTopnav.responsive a {
+        display: block;
+        text-align: center;
+    }
+    .containerHeader2 .text p {
+        font-size: 1.5em;
+    }
+   .containerHeader2 .text p::first-line {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 680px) {
+
+    .icon4 {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .icon4 .icon-item p::first-line {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .containerHeader2 .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .containerHeader2,
+    .containerHeader2 .text    
+    {
+        flex-direction: column;
+    }
+    .icon {
+        width: 70%;
+    }
+    .containerHeader2 .text p {
+        color: #000;
+        text-align: center;
+    }
+    
+    main .content,
+    main .content2 {
+        width: auto;
+    }
+    main .content h3 {
+        font-size:28px; 
+    }
+    main .content2 h3 {
+        font-size:22px; 
+    }
+    
+    .login,
+    .subs {
+        width: 95%;
+        height: 100%;
+    }
+
+    .login p,
+    .subs p,
+    input[type='text'],
+    input[type='password'],
+    input[type='email'] {
+        text-align: center;
+        padding: 0;
+    }
+
+    .input-3,
+    .input-2,
+    .input-2-right {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .icon4 {
+        font-size: 12px;
+    }
+
+    .icon4 .icon-item p::first-line {
+        font-size: 14px;
+    }
+}

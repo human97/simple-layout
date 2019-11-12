@@ -1,0 +1,51 @@
+.containerHeader,
+.containerHeader2,
+.containerHeader3,
+.icon4,
+.content2,
+.form,
+.footer,
+.content,
+.content2,
+.form,
+.input-2,
+.input-3,
+.input-2-right {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+}
+
+.input-3,
+.input-2-right {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerHeader {
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 48px 0 0 10px;
+}
+
+.containerHeader2,
+.icon4,
+.content2,
+.form,
+.footer {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content {
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.content2,
+.form,
+.footer {
+    flex-wrap: wrap;
+}
