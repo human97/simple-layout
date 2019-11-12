@@ -13,20 +13,26 @@
 .input-2-right {
     display: flex;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
 }
 
 .input-3,
 .input-2-right {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .containerHeader {
-        justify-content: space-around;
-        align-items: flex-start;
-        padding: 48px 0 0 10px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 48px 0 0 10px;
 }
 
 .containerHeader2,
@@ -34,12 +40,20 @@
 .content2,
 .form,
 .footer {
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .content {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 
 }
@@ -47,5 +61,6 @@
 .content2,
 .form,
 .footer {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
