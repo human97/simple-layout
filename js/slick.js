@@ -4,13 +4,10 @@ $('.slider1').slick({
     speed: 2000,
 });
 
+
+// функция открытия/закрытия адаптивного меню
 let menu = document.getElementById('menu')
 menu.onclick = function myFunction() {
     let x = document.getElementById('myTopnav')
     x.classList.toggle('responsive')
-    /*if (x.className === 'boxTopnav') {
-        x.className += ' responsive';
-    } else {
-        x.className = 'boxTopnav';
-    }*/
 }
