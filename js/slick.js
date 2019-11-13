@@ -8,9 +8,4 @@ let menu = document.getElementById('menu')
 menu.onclick = function myFunction() {
     let x = document.getElementById('myTopnav')
     x.classList.toggle('responsive')
-    /*if (x.className === 'boxTopnav') {
-        x.className += ' responsive';
-    } else {
-        x.className = 'boxTopnav';
-    }*/
 }
